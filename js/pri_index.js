@@ -34,16 +34,16 @@ $(document).ready(function(){
 		demo.scrollLeft(demo.scrollLeft()-1);
 		}
 	}
-	$("#icon_ad_mid_left").mouseover(function(){
+	$("#icon_ad_mid_right").mouseover(function(){
 		MyMar=setInterval(marquee_left,speed);
 		});
-	$("#icon_ad_mid_left").mouseout(function(){
+	$("#icon_ad_mid_right").mouseout(function(){
 		clearInterval(MyMar);
 		});
-	$("#icon_ad_mid_right").mouseover(function(){
+	$("#icon_ad_mid_left").mouseover(function(){
 		MyMar=setInterval(marquee_right,speed);
 		});
-	$("#icon_ad_mid_right").mouseout(function(){
+	$("#icon_ad_mid_left").mouseout(function(){
 		clearInterval(MyMar);
 	});
 });
