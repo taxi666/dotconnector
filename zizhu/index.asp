@@ -3,11 +3,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>江南大学资助中心</title>
+<title>陆颅脛脧麓贸脩搂脳脢脰煤脰脨脨脛</title>
 <style type="text/css">
 *{margin:0;padding:0;border:0;}
 body {
- font-family: arial, 宋体, serif;
+ font-family: arial, 脣脦脤氓, serif;
  font-size:12px;
  
  
@@ -15,7 +15,7 @@ body {
 
 
 
-a:focus {   -moz-outline-style: none; } /*去掉链接虚线 for firefox*/
+a:focus {   -moz-outline-style: none; } /*脠楼碌么脕麓陆脫脨茅脧脽 for firefox*/
 
 a:hover {
 	color:#ea272a;
@@ -87,9 +87,9 @@ a {
 #nav li.sfhover ul {
  left: auto;
 }
-  *+ html #nav li ul{margin: 0 0 0 -60px;} /* 二级菜单显示位置调整IE7 */
+  *+ html #nav li ul{margin: 0 0 0 -60px;} /* 露镁录露虏脣碌楼脧脭脢戮脦禄脰脙碌梅脮没IE7 */
    *html #nav li ul{   
-   margin:0  0 0 -60px;} /* 二级菜单显示位置调整 IE*/
+   margin:0  0 0 -60px;} /* 露镁录露虏脣碌楼脧脭脢戮脦禄脰脙碌梅脮没 IE*/
  
 
 
@@ -142,12 +142,12 @@ a {
 	margin:2px auto;
 }
 #div_sidebar {
- width:197px; /*设定宽度*/
+ width:197px; /*脡猫露篓驴铆露脠*/
  height:600px;
- text-align:left; /*文字左对齐*/
- float:left; /*浮动居左*/
- clear:left; /*不允许左侧存在浮动*/
- overflow:hidden; /*超出宽度部分隐藏*/
+ text-align:left; /*脦脛脳脰脳贸露脭脝毛*/
+ float:left; /*赂隆露炉戮脫脳贸*/
+ clear:left; /*虏禄脭脢脨铆脳贸虏脿麓忙脭脷赂隆露炉*/
+ overflow:hidden; /*鲁卢鲁枚驴铆露脠虏驴路脰脪镁虏脴*/
  margin:0px auto;
 }
 #sidebar1,#sidebar2,#sidebar3{
@@ -178,7 +178,7 @@ a {
 	font-size:14px;	
 }
 .li_title {
-		font-size:16px;color:#ea272a;font-family:"微软雅黑";font-weight:normal;line-height:32px;border-bottom:solid 1px #bdbdbd;
+		font-size:16px;color:#ea272a;font-family:"脦垄脠铆脩脜潞脷";font-weight:normal;line-height:32px;border-bottom:solid 1px #bdbdbd;
 		margin:10px 20px auto 20px;
 		list-style:none;
 		}
@@ -187,32 +187,32 @@ a {
  width:760px;
  height:600px;
  text-align:left;
- float:right; /*浮动居右*/
- clear:right; /*不允许右侧存在浮动*/
+ float:right; /*赂隆露炉戮脫脫脪*/
+ clear:right; /*虏禄脭脢脨铆脫脪虏脿麓忙脭脷赂隆露炉*/
  overflow:hidden;
 }
 #mainbody_notice{
-	width:760px; /*设定宽度*/
+	width:760px; /*脡猫露篓驴铆露脠*/
     height:299px;
-    text-align:left; /*文字左对齐*/
+    text-align:left; /*脦脛脳脰脳贸露脭脝毛*/
     overflow:hidden; 
 	margin:0px auto;
 	border:solid 1px #bdbdbd;border-width:0 1px 1px 1px;
 }
    
 #mainbody_employment{ 
-	width:760px; /*设定宽度*/
+	width:760px; /*脡猫露篓驴铆露脠*/
     height:299px;
-    text-align:left; /*文字左对齐*/
+    text-align:left; /*脦脛脳脰脳贸露脭脝毛*/
     overflow:hidden; 
 	margin-bottom:0px;
 	border-left:solid 1px #bdbdbd;
 }
 	
 .main_title{
-	width:720px; /*设定宽度*/
+	width:720px; /*脡猫露篓驴铆露脠*/
     height:35px;
-    text-align:left; /*文字左对齐*/
+    text-align:left; /*脦脛脳脰脳贸露脭脝毛*/
     overflow:hidden; 
 	margin:0px auto;
 	border-bottom:solid 1px #b2b2b2;
@@ -223,13 +223,13 @@ a {
 	margin-left:672px;
 	margin-top:-28px;
 }
-.main_title a{font-size:16px;color:#ea272a;font-family:"微软雅黑";font-weight:normal;line-height:36px;text-decoration:none;}
-.main_title a:hover{font-size:16px;color:#ea272a;font-family:"微软雅黑";font-weight:normal;line-height:36px; 
+.main_title a{font-size:16px;color:#ea272a;font-family:"脦垄脠铆脩脜潞脷";font-weight:normal;line-height:36px;text-decoration:none;}
+.main_title a:hover{font-size:16px;color:#ea272a;font-family:"脦垄脠铆脩脜潞脷";font-weight:normal;line-height:36px; 
 text-decoration:underline;}
 .main_content{
-	width:720px; /*设定宽度*/
+	width:720px; /*脡猫露篓驴铆露脠*/
 	height:264px;
-    text-align:left; /*文字左对齐*/
+    text-align:left; /*脦脛脳脰脳贸露脭脝毛*/
     overflow:hidden; 
 	margin-left:20px;
 }
@@ -283,45 +283,45 @@ window.onload=menuFix;
 <div id="div_mid">
 
    <ul id="nav">
- <li class="li1"><a href="./index.asp" target="_bank">资助首页</a>
+ <li class="li1"><a href="./index.asp" target="_bank">脳脢脰煤脢脳脪鲁</a>
   </li>
- <li class="li1"><a href="lis/zhongxinjianjie.html" target="_bank">中心简介</a>
+ <li class="li1"><a href="lis/zhongxinjianjie.html" target="_bank">脰脨脨脛录貌陆茅</a>
   <ul>
-   <li><a href="lis/jigoushezhi.html" target="_bank">机构设置</a></li>
-   <li><a href="lis/zhongxinfengong.html" target="_bank">中心分工</a></li>
-   <li><a href="lis/fazhanzhongxi.html" target="_bank">大学生发展中心</a></li>
+   <li><a href="lis/jigoushezhi.html" target="_bank">禄煤鹿鹿脡猫脰脙</a></li>
+   <li><a href="lis/zhongxinfengong.html" target="_bank">脰脨脨脛路脰鹿陇</a></li>
+   <li><a href="lis/fazhanzhongxi.html" target="_bank">麓贸脩搂脡煤路垄脮鹿脰脨脨脛</a></li>
   </ul>
  </li>
- <li class="li1"><a href="lis/jiangzhuzhuanqu.html" target="_bank">奖助专区</a>
+ <li class="li1"><a href="lis/jiangzhuzhuanqu.html" target="_bank">陆卤脰煤脳篓脟酶</a>
   <ul>
-   <li><a href="lis/lvshetongdao.html" target="_bank">新生绿色通道</a></li>
-   <li><a href="lis/kunnanxueshengrending.html" target="_bank">困难学生认定</a></li>
-   <li><a href="lis/jiangzhuxuejin.html" target="_bank">奖助学金</a></li>
-   <li><a href="lis/jianmiankunbu.html" target="_bank">减免困补</a></li>
+   <li><a href="lis/lvshetongdao.html" target="_bank">脨脗脡煤脗脤脡芦脥篓碌脌</a></li>
+   <li><a href="lis/kunnanxueshengrending.html" target="_bank">脌搂脛脩脩搂脡煤脠脧露篓</a></li>
+   <li><a href="lis/jiangzhuxuejin.html" target="_bank">陆卤脰煤脩搂陆冒</a></li>
+   <li><a href="lis/jianmiankunbu.html" target="_bank">录玫脙芒脌搂虏鹿</a></li>
   </ul>
  </li>
- <li class="li1"><a href="lis/zhuxuedaikuan.html" target="_bank">助学贷款</a>
+ <li class="li1"><a href="lis/zhuxuedaikuan.html" target="_bank">脰煤脩搂麓没驴卯</a>
   <ul>
-   <li><a href="lis/shengyuandi.html" target="_bank">生源地贷款</a></li>
-   <li><a href="lis/guojiazxdk.html" target="_bank">国家助学贷款</a></li>
-   <li><a href="lis/huandaiguanli.html" target="_bank">还贷管理</a></li>
+   <li><a href="lis/shengyuandi.html" target="_bank">脡煤脭麓碌脴麓没驴卯</a></li>
+   <li><a href="lis/guojiazxdk.html" target="_bank">鹿煤录脪脰煤脩搂麓没驴卯</a></li>
+   <li><a href="lis/huandaiguanli.html" target="_bank">禄鹿麓没鹿脺脌铆</a></li>
   </ul>
   </li>
-  <li class="li1"><a href="lis/jianzhi.html" target="_bank">兼职专区</a>
+  <li class="li1"><a href="lis/jianzhi.html" target="_bank">录忙脰掳脳篓脟酶</a>
   <ul>
-   <li><a href="lis/jiajiao.html"  target="_bank">家教</a></li>
-   <li><a href="lis/danweijianzhi.html"  target="_bank">企事业单位兼职</a></li>
-   <li><a href="lis/xiaoneijianzhi.html"  target="_bank">校内兼职</a></li>
+   <li><a href="lis/jiajiao.html"  target="_bank">录脪陆脤</a></li>
+   <li><a href="lis/danweijianzhi.html"  target="_bank">脝贸脢脗脪碌碌楼脦禄录忙脰掳</a></li>
+   <li><a href="lis/xiaoneijianzhi.html"  target="_bank">脨拢脛脷录忙脰掳</a></li>
   </ul>
   </li>
-  <li class="li1"><a href="lis/aixinjuanzeng.html"  target="_bank">爱心捐赠</a>
+  <li class="li1"><a href="lis/aixinjuanzeng.html"  target="_bank">掳庐脨脛戮猫脭霉</a>
   </li>
-  <li class="li1"><a href="downlist.asp?pageno=1" target="_blank">下载专区</a>
+  <li class="li1"><a href="downlist.asp?pageno=1" target="_blank">脧脗脭脴脳篓脟酶</a>
   </li>
-  <li class="li1"><a href="lis/lianxiwomen.html"  target="_bank">联系我们</a>
+  <li class="li1"><a href="lis/lianxiwomen.html"  target="_bank">脕陋脧碌脦脪脙脟</a>
   <ul>
-   <li ><a href="lis/banshizhinan.html"  target="_bank">办事指南</a></li>
-   <li><a href="liuyan.asp?pageno=1"  target="_bank">留言板</a></li>
+   <li ><a href="lis/banshizhinan.html"  target="_bank">掳矛脢脗脰赂脛脧</a></li>
+   <li><a href="liuyan.asp?pageno=1"  target="_bank">脕么脩脭掳氓</a></li>
   </ul>
   </li>
 </ul>
@@ -332,41 +332,41 @@ window.onload=menuFix;
 <div id="div_main">
 
 <div id="div_sidebar">
-      <!--侧边栏-->
-      <div id="sidebar1"> <a class="wenzi" target="_blank" href="lis/qiye.html"> 企业用人窗口</a> </div>
-      <div id="sidebar2"> <a class="wenzi" target="_blank" href="jiajiao.asp" > 家教用人窗口</a> </div>
-      <div id="sidebar3"> <a class="wenzi" target="_blank" href="liuyan.asp?pageno=1"> 留言板</a> </div>
+      <!--虏脿卤脽脌赂-->
+      <div id="sidebar1"> <a class="wenzi" target="_blank" href="lis/qiye.html"> 脝贸脪碌脫脙脠脣麓掳驴脷</a> </div>
+      <div id="sidebar2"> <a class="wenzi" target="_blank" href="jiajiao.asp" > 录脪陆脤脫脙脠脣麓掳驴脷</a> </div>
+      <div id="sidebar3"> <a class="wenzi" target="_blank" href="liuyan.asp?pageno=1"> 脕么脩脭掳氓</a> </div>
       <div id="yqlj">
         <ul>
-          <li class="li_title">友情链接</li>
+          <li class="li_title">脫脩脟茅脕麓陆脫</li>
            <li class="li_content">
-          <a href="http://www.jiangnan.edu.cn/" target="_blank">江南大学首页</a>
+          <a href="http://www.jiangnan.edu.cn/" target="_blank">陆颅脛脧麓贸脩搂脢脳脪鲁</a>
           </li>
           <li class="li_content">
-          <a href="http://jdxgc.jiangnan.edu.cn/"target="_blank" >江南大学学工处</a>
+          <a href="http://jdxgc.jiangnan.edu.cn/"target="_blank" >陆颅脛脧麓贸脩搂脩搂鹿陇麓娄</a>
           </li>     
           
           <li class="li_content">
-          <a href="http://lib.jiangnan.edu.cn/" target="_blank">江南大学图书馆</a>
+          <a href="http://lib.jiangnan.edu.cn/" target="_blank">陆颅脛脧麓贸脩搂脥录脢茅鹿脻</a>
           </li>
          
           <li class="li_content">
-          <a href='http://sytu.baidajob.com/' target="_blank">江南大学就业网</a>
+          <a href='http://sytu.baidajob.com/' target="_blank">陆颅脛脧麓贸脩搂戮脥脪碌脥酶</a>
           </li>
            <li class="li_content">
-          <a href='http://sytu.baidajob.com/' target="_blank">江南大学听雨论坛</a>
+          <a href='http://sytu.baidajob.com/' target="_blank">陆颅脛脧麓贸脩搂脤媒脫锚脗脹脤鲁</a>
           </li>
           <li class="li_content">
-          <a href='http://fudaoyuan.jiangnan.edu.cn' target=_blank>江南大学辅导员网</a>
+          <a href='http://fudaoyuan.jiangnan.edu.cn' target=_blank>陆颅脛脧麓贸脩搂赂篓碌录脭卤脥酶</a>
 
           </li>
            <li class="li_content">
-          <a href='http://202.195.144.141/webc/x2/' target=_blank>江大心理健康教育网</a>
+          <a href='http://202.195.144.141/webc/x2/' target=_blank>陆颅麓贸脨脛脌铆陆隆驴碌陆脤脫媒脥酶</a>
 
           </li>
           
           <li class="li_content">
-          <a href='http://166.111.4.130:8080/?d=jiangnan.emtoem.com' target="_blank">江大职前教育网络学堂</a>
+          <a href='http://166.111.4.130:8080/?d=jiangnan.emtoem.com' target="_blank">陆颅麓贸脰掳脟掳陆脤脫媒脥酶脗莽脩搂脤脙</a>
 
           </li>
          
@@ -374,14 +374,14 @@ window.onload=menuFix;
         </ul> </div>
     </div>
     
-  <div id="div_mainbody"><!--主体内容-->
+  <div id="div_mainbody"><!--脰梅脤氓脛脷脠脻-->
   
     <div id="mainbody_notice">
       <div class="main_title">
-      <a href="list1.asp?pageno=1" >通知公告</a>
+      <a href="list1.asp?pageno=1" >脥篓脰陋鹿芦赂忙</a>
       <div class="iconmore">
       <a href="list1.asp?pageno=1">
-      <img src="images/20060905030313587.gif"  alt="更多" /></a></div></div>
+      <img src="images/20060905030313587.gif"  alt="赂眉露脿" /></a></div></div>
        
       <div class="main_content">
       
@@ -397,9 +397,9 @@ window.onload=menuFix;
 
 		do while not rs.eof%>
 		<%
-      maxlen=21 '其实是定好长度值 
-      title=rs("title") '变量赋数据记录的字段值 
-      If Len(title)>maxlen then title=left(title,maxlen-1)&"...." ''如果变量长度大于20--最长长度,让变量长度变成(20-2),后接... 
+      maxlen=21 '脝盲脢碌脢脟露篓潞脙鲁陇露脠脰碌 
+      title=rs("title") '卤盲脕驴赂鲁脢媒戮脻录脟脗录碌脛脳脰露脦脰碌 
+      If Len(title)>maxlen then title=left(title,maxlen-1)&"...." ''脠莽鹿没卤盲脕驴鲁陇露脠麓贸脫脷20--脳卯鲁陇鲁陇露脠,脠脙卤盲脕驴鲁陇露脠卤盲鲁脡(20-2),潞贸陆脫... 
     %>
       <li>
       <a href="view1.asp?id=<%=rs("id")%>" title="<%=rs("title")%>"><%=title%></a>&nbsp;<%=FormatDateTime(rs("date"),vbshortdate)%>
@@ -422,16 +422,16 @@ window.onload=menuFix;
 		end if
 		%>
       </ul>  
-    </div><!--通知公告-->
+    </div><!--脥篓脰陋鹿芦赂忙-->
     </div>
     
     <div id="mainbody_employment">
     
       <div  class="main_title">
-      <a href="list2.asp?pageno=1"> 招聘信息</a>
+      <a href="list2.asp?pageno=1"> 脮脨脝赂脨脜脧垄</a>
       <div class="iconmore">
         <a href="list2.asp?pageno=1">
-      <img src="images/20060905030313587.gif"  alt="更多" /></a></div> </div>
+      <img src="images/20060905030313587.gif"  alt="赂眉露脿" /></a></div> </div>
       <div class="main_content">   
          
 	          <%
@@ -445,8 +445,8 @@ window.onload=menuFix;
 
 		do while not rs.eof%>
 		<%
-      title=rs("title") '变量赋数据记录的字段值 
-      If Len(title)>maxlen then title=left(title,maxlen-1)&"...." ''如果变量长度大于20--最长长度,让变量长度变成(20-2),后接... 
+      title=rs("title") '卤盲脕驴赂鲁脢媒戮脻录脟脗录碌脛脳脰露脦脰碌 
+      If Len(title)>maxlen then title=left(title,maxlen-1)&"...." ''脠莽鹿没卤盲脕驴鲁陇露脠麓贸脫脷20--脳卯鲁陇鲁陇露脠,脠脙卤盲脕驴鲁陇露脠卤盲鲁脡(20-2),潞贸陆脫... 
     %>
       <li>
       <a href="view2.asp?id=<%=rs("id")%>" title="<%=rs("title")%>"><%=title%></a> &nbsp;<%=FormatDateTime(rs("date"),vbshortdate)%>
@@ -470,26 +470,26 @@ window.onload=menuFix;
 		%>
       </ul>
       </div>
-    </div><!--招聘信息-->
+    </div><!--脮脨脝赂脨脜脧垄-->
     
-　</div>
+隆隆</div>
 
 
-</div> <!--main主区-->
+</div> <!--main脰梅脟酶-->
 
 <div id="div_foot">
-<li class="foot">江南大学学生资助中心 </li>
-<li class="foot">地址:无锡市滨湖区蠡湖大道1800号江南大学北区 大学生活动中心 </li>
-<li class="foot">电话:0510-85910283 &nbsp;&nbsp;   传真:0510-85328172&nbsp;&nbsp;
+<li class="foot">陆颅脛脧麓贸脩搂脩搂脡煤脳脢脰煤脰脨脨脛 </li>
+<li class="foot">碌脴脰路:脦脼脦媒脢脨卤玫潞镁脟酶贸禄潞镁麓贸碌脌1800潞脜陆颅脛脧麓贸脩搂卤卤脟酶 麓贸脩搂脡煤禄卯露炉脰脨脨脛 </li>
+<li class="foot">碌莽禄掳:0510-85910283 &nbsp;&nbsp;   麓芦脮忙:0510-85328172&nbsp;&nbsp;
 </li>
       
-<li class="foot">邮编:214122  &nbsp;&nbsp;
- <a href="admin/login.asp"> 后台入口</a></li>
+<li class="foot">脫脢卤脿:214122  &nbsp;&nbsp;
+ <a href="admin/login.asp"> 潞贸脤篓脠毛驴脷</a></li>
 </div>
-<!--foot底部-->
+<!--foot碌脳虏驴-->
 
 </div>
-<!--container容器-->
+<!--container脠脻脝梅-->
 
 
 
