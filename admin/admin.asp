@@ -73,7 +73,7 @@ End Function
 <HTML>
 <HEAD>
 <TITLE>管理中心</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 <link rel="stylesheet" href="../styles/admin.css" type="text/css">
 <style type="text/css">
 <!--
@@ -91,7 +91,7 @@ End Function
 <table class="text" cellSpacing=0 cellPadding=0 width=95% align=center border=0>
   <TR> 
     <TD > 
-      <p><b><font color="#FF0000">欢迎光临 <%=homepage_title%>--管理控制面板</font></b></p>
+      <p><b><font color="#FF0000">欢迎光临 <%=homepage_title%> -- 管理控制面板</font></b></p>
       <p>&nbsp;</p>
       <p>在这里，您可以控制你所有的网站设置。请在此页的左侧选择您要进行管理的链接。</p>
     </TD>

@@ -2,7 +2,7 @@
 
 <html>
 <title>新闻管理目录</title>
-<link rel="stylesheet" href="../css/style.css" type="text/css">
+<link rel="stylesheet" href="../styles/admin.css" type="text/css">
 <head>
 
 
@@ -35,7 +35,7 @@ eval("submenu" + sid + ".style.display=\"none\";");
         </table>
         <table class="text" cellpadding="0" cellspacing="0" width="158" align="center">
           <tr> 
-            <td height="25" class="menu_title" onmouseover="this.className='menu_title2';" onmouseout="this.className='menu_title';" background="images/title_bg_quit.gif"> 
+            <td height="25" class="menu_title_menu"> 
               <div align="left">&nbsp;&nbsp;<a href="default.asp" target="_top"><b>管理首页</b></a> 
                 | <a href="logout.asp" target="_top"> <b>退出</b></a> </div>
             </td>

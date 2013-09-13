@@ -9,6 +9,6 @@ End Function
 
 tmpadmin=checkPermission()
 If tmpadmin<>TRUE then
-	response.redirect "../../admin/login.asp?postion=2"
+	response.redirect "../admin/login.asp?postion=2"
 End if
 %>

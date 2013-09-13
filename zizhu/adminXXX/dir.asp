@@ -2,7 +2,7 @@
 
 <html>
 <title>新闻管理目录</title>
-<link rel="stylesheet" href="../css/style.css" type="text/css">
+<link rel="stylesheet" href="../styles/admin.css" type="text/css">
 <head>
 
 

@@ -1,166 +1,180 @@
 <!--#include file="../inc/setup.asp" -->
 <!--#include file="../dbconnect/admin.inc.asp" -->
-<!--#include file="../inc/SysLoginCheck.inc.asp" -->
-
-<%	
- 	Sub Showspecialspaceinfo(method)
- 		dim fso,d,fc,f1,size,showsize,drvpath 		
- 		set fso=server.createobject("scripting.filesystemobject")
- 		drvpath=server.mappath("../db/")
- 		drvpath=left(drvpath,(instrrev(drvpath,"\")-1))
- 		set d=fso.getfolder(drvpath) 		
- 		
- 		if method="All" then 		
- 			size=d.size
- 		elseif method="Program" then
- 			set fc=d.Files
- 			for each f1 in fc
- 				size=size+f1.size
- 			next	
- 		end if	
- 		
- 		showsize=size & "&nbsp;Byte" 
- 		if size>1024 then
- 		   size=(size\1024)
- 		   showsize=size & "&nbsp;KB"
- 		end if
- 		if size>1024 then
- 		   size=(size/1024)
- 		   showsize=formatnumber(size,2) & "&nbsp;MB"		
- 		end if
- 		if size>1024 then
- 		   size=(size/1024)
- 		   showsize=formatnumber(size,2) & "&nbsp;GB"	   
- 		end if   
- 		response.write "<font face=verdana>" & showsize & "</font>"
- 	end sub 	 	 	
-
-%>
-
 <%
-	Dim theInstalledObjects(17)
-    theInstalledObjects(0) = "MSWC.AdRotator"
-    theInstalledObjects(1) = "MSWC.BrowserType"
-    theInstalledObjects(2) = "MSWC.NextLink"
-    theInstalledObjects(3) = "MSWC.Tools"
-    theInstalledObjects(4) = "MSWC.Status"
-    theInstalledObjects(5) = "MSWC.Counters"
-    theInstalledObjects(6) = "IISSample.ContentRotator"
-    theInstalledObjects(7) = "IISSample.PageCounter"
-    theInstalledObjects(8) = "MSWC.PermissionChecker"
-    theInstalledObjects(9) = "Scripting.FileSystemObject"
-    theInstalledObjects(10) = "adodb.connection"
-    
-    theInstalledObjects(11) = "SoftArtisans.FileUp"
-    theInstalledObjects(12) = "SoftArtisans.FileManager"
-    theInstalledObjects(13) = "JMail.SMTPMail"
-    theInstalledObjects(14) = "CDONTS.NewMail"
-    theInstalledObjects(15) = "Persits.MailSender"
-    theInstalledObjects(16) = "LyfUpload.UploadFile"
-    theInstalledObjects(17) = "Persits.Upload.1"
+postion = Trim(Request.QueryString("postion"))
 
-Function IsObjInstalled(strClassString)
-	On Error Resume Next
-	IsObjInstalled = False
-	Err = 0
-	Dim xTestObj
-	Set xTestObj = Server.CreateObject(strClassString)
-	If 0 = Err Then IsObjInstalled = True
-	Set xTestObj = Nothing
-	Err = 0
+if postion="" or not IsNumeric(postion) then
+	errmsg=""
+	postion=trim(1)
+else
+	errmsg="<p style='color:#FF0000;'><b>ÄúÃ»ÓĞµÇÂ½»òÕßÍ£ÁôµÄÊ±¼ä¹ı³¤£¬ÇëÖØĞÂµÇÂ½£¡</b></p>"
+end if
+
+Function checkenter()
+	If username<>"" and password<>"" and otherpwd<>"" and Instr(username,"'")<1 and Instr(username," ")<1 and Instr(username,"""")<1 and Instr(username,"&")<1 then
+		checkenter=TRUE
+	Else
+		checkenter=FALSE
+	End If
+End Function
+
+Function checksysUser()
+	sql="SELECT * FROM admin WHERE user='"&username&"'"
+	Set rs=Server.CreateObject("adodb.recordset")
+	rs.Open sql,conn,1,1
+	if rs.eof then
+		checksysUser=FALSE
+	else
+		passwd=trim(rs("pwd"))
+		if passwd=password then
+		   Session("admin")=username
+		   checksysUser=TRUE		
+	    else
+		   checksysUser=FALSE
+		end if
+	End if
+	rs.close
+	conn.close
 End Function
 %>
 <HTML>
 <HEAD>
-<TITLE>ç®¡ç†ä¸­å¿ƒ</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" href="../styles/admin.css" type="text/css">
-<style type="text/css">
+<TITLE><%=homepage_title%>--¹ÜÀíÖĞĞÄ-ÓÃ»§µÇÂ½</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+<script language="JavaScript">
 <!--
-.STYLE1 {color: #000099}
-.STYLE2 {
-	color: #FF0000;
-	font-weight: bold;
+function window_onload() {
+	document.mail.username.focus();
 }
--->
-</style>
+function cancel()
+{
+	mail.reset();
+}
+
+function IsValid()
+{
+	if (document.mail.username.value=="")
+	{
+		alert("ÓÃ»§Ãû²»ÄÜÎª¿Õ");
+		document.mail.username.focus();
+		return false;
+	}
+	if (document.mail.password.value=="")
+	{
+		alert("ÃÜÂë²»ÄÜÎª¿Õ");
+		document.mail.password.focus();
+		return false;
+	}
+	if (document.mail.otherpwd.value=="")
+	{
+		alert("¸½¼ÓÂë²»ÄÜÎª¿Õ");
+		document.mail.otherpwd.focus();
+		return false;
+	}
+}
+//-->
+</script>
+<link rel="stylesheet" href="../styles/admin.css" type="text/css">
 </HEAD>
 
-<BODY bgColor=#FFFFFF topMargin=0 leftmargin="0">
-<!--#include file="../inc/top.asp" -->
-<table class="text" cellSpacing=0 cellPadding=0 width=95% align=center border=0>
-  <TR> 
-    <TD > 
-      <p><b><font color="#FF0000">æ¬¢è¿å…‰ä¸´ <%=homepage_title%>--ç®¡ç†æ§åˆ¶é¢æ¿</font></b></p>
-      <p>&nbsp;</p>
-      <p>åœ¨è¿™é‡Œï¼Œæ‚¨å¯ä»¥æ§åˆ¶ä½ æ‰€æœ‰çš„ç½‘ç«™è®¾ç½®ã€‚è¯·åœ¨æ­¤é¡µçš„å·¦ä¾§é€‰æ‹©æ‚¨è¦è¿›è¡Œç®¡ç†çš„é“¾æ¥ã€‚</p>
-    </TD>
-  </TR>
-</TABLE>
-<table class="text" cellpadding="2" cellspacing="1" border="0" width="95%" align="center">
-  <tr bgcolor="#799AE1"> 
-    <td colspan=2 height=25> 
-      <div align="center"><font color="#FFFFFF"><b>æ•°æ®åº“ä¿¡æ¯ç»Ÿè®¡</b></font></div>
-    </td>
-  <tr> 
-  <tr> 
-    <td width="50%"   height=23 bgcolor="#DDEEFF">æœåŠ¡å™¨ç±»å‹ï¼š<%=Request.ServerVariables("OS")%>(IP:<%=Request.ServerVariables("LOCAL_ADDR")%>)</td>
-    <td width="50%"  bgcolor="#DDEEFF">è„šæœ¬è§£é‡Šå¼•æ“ï¼š<%=ScriptEngine & "/"& ScriptEngineMajorVersion &"."&ScriptEngineMinorVersion&"."& ScriptEngineBuildVersion %></td>
-  </tr>
-  <tr> 
-    <td width="50%"  height=23 bgcolor="#DDEEFF">ç«™ç‚¹ç‰©ç†è·¯å¾„ï¼š<%=request.ServerVariables("APPL_PHYSICAL_PATH")%></td>
-    <td width="50%"  bgcolor="#DDEEFF">æ•°æ®åº“å ç”¨ç©ºé—´æ€»è®¡ï¼š 
-      <%
- 			fsoflag=1
- 			if fsoflag=1 then	
- 				showspecialspaceinfo("All")
- 			else
- 				response.write "æœ¬åŠŸèƒ½å·²ç»è¢«å…³é—­"
- 			end if
- 			%>
-    </td>
-  </tr>
-  <tr> 
-    <td width="50%"  height=23 bgcolor="#DDEEFF">FSOæ–‡æœ¬è¯»å†™ï¼š 
-      <%If Not IsObjInstalled(theInstalledObjects(9)) Then%>
-      <font color="#FF0000"><b>Ã—</b></font> 
-      <%else%>
-      <b>âˆš</b> 
-      <%end if%>
-    </td>
-    <td width="50%"  bgcolor="#DDEEFF">æ•°æ®åº“ä½¿ç”¨ï¼š 
-      <%If Not IsObjInstalled(theInstalledObjects(10)) Then%>
-      <font color="#FF0000"><b>Ã—</b></font> 
-      <%else%>
-      <b>âˆš</b> 
-      <%end if%>
-    </td>
-  </tr>
-  <tr> 
-    <td width="50%"  height=23 bgcolor="#DDEEFF">Jmailç»„ä»¶æ”¯æŒï¼š 
-      <%If Not IsObjInstalled(theInstalledObjects(13)) Then%>
-      <font color="#FF0000"><b>Ã—</b></font> 
-      <%else%>
-      <b>âˆš</b> 
-      <%end if%>
-    </td>
-    <td width="50%"  bgcolor="#DDEEFF">CDONTSç»„ä»¶æ”¯æŒï¼š 
-      <%If Not IsObjInstalled(theInstalledObjects(14)) Then%>
-      <font color="#FF0000"><b>Ã—</b></font> 
-      <%else%>
-      <b>âˆš</b> 
-      <%end if%>
-    </td>
-  </tr>
+<BODY bgColor=#FFFFFF topMargin=0 leftmargin="0" onload="return window_onload()">
+<p>&nbsp;</p>
+<%
+	if Request.Form("action")="true" then
+		username=trim(Request.Form("username"))
+		password=trim(Request.Form("password"))
+		position = Trim(Request.form("postion"))
+		otherpwd = Trim(Request.form("otherpwd"))
+		reotherpwd = Trim(Request.form("reotherpwd"))
+		
+		a=checkenter()
+		If a=TRUE then
+			if otherpwd = reotherpwd then
+				b=checksysUser()
+				if b=true then
+					if position <> 2 then 
+						Response.Redirect("main.asp")
+					else
+%>
+               			<script language=javascript>
+							top.document.location.reload();
+						</script>
+<%
+					end if
+				else
+					errmsg="<font color=#FF0000><b>ÓÃ»§Ãû»òÕßÓÃ»§ÃÜÂë´íÎó£¬ÇëÖØĞÂÊäÈë£¡</b></font>"
+				end if
+			else
+				errmsg="<font color=#FF0000><b>¸½¼ÓÂëÊäÈë´íÎó£¬ÇëÖØĞÂÊäÈë£¡</b></font>"
+			end if
+		else
+			errmsg="<font color=#FF0000><b>ÓÃ»§ÃûÊäÈëÓĞÎó£¬ÇëÖØĞÂÊäÈë£¡</b></font>"
+		end if
+	end if 
+%>
+<div align="center"><%=errmsg%><br></div>
+<table class="text" width="450" height="289" border="0" cellpadding="0" cellspacing="0" background="images/admin.gif" align="center">
+  <form name=mail action="login.asp" onSubmit="return IsValid();" method=post>
+    <tr> 
+      <td width="83" height="133">&nbsp;</td>
+      <td width="283">&nbsp;</td>
+      <td width="84">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td height="98">&nbsp;</td>
+      <td valign="top"> 
+        <table class="text" cellspacing=0 cellpadding=0 width=247 border=0 align="center">
+          <tbody> 
+          <tr> 
+            <td height="28" style="line-height:180%"> ÕÊ&nbsp;&nbsp;ºÅ£º 
+              <input type="text" name="username" size="20" class="button1">
+            </td>
+          </tr>
+          <tr> 
+            <td height="28" style="line-height:180%"> ÃÜ&nbsp;&nbsp;Âë£º 
+              <input type="password" name="password" size="20" class="button1">
+            </td>
+          </tr>
+          <tr>
+            <td height="28" style="line-height:180%"> ¸½¼ÓÂë£º 
+              <input type="text" name="otherpwd" size="20" class="button1">
+              <font face="Arial, Helvetica, sans-serif"> 
+              <%
+				dim temprnd
+				Randomize
+				temprnd=cstr(Int((9999 - 1000 + 1) * Rnd() + 1000))
+				response.Write (temprnd)
+			  %>
+              </font>
+              <input type="hidden" name="action" value="true">
+			  <input type="hidden" name="postion" value="<%=postion%>">
+			  <input type="hidden" name="reotherpwd" value="<%=temprnd%>">
+			  </td>
+          </tr>
+          </tbody> 
+        </table>
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr> 
+      <td>&nbsp;</td>
+      <td valign="top"> 
+        <table class="text" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td> 
+              <div align="center"> <a href="/"><font color="#0000FF">·µ»ØÊ×Ò³</font></a> 
+              </div>
+            </td>
+            <td> 
+              <input type=image height=23 width=62 src="images/btn_index_ok.gif" border=0 name=submit1>
+              <img onMouseOver="event.srcElement.style.cursor='hand'" onClick=cancel() height=23 src="images/btn_index_cancel.gif" width=62 border=0> </td>
+          </tr>
+        </table>
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+  </form>
 </table>
-<table class="text" cellpadding="2" cellspacing="1" border="0" width="95%" align="center">
-  <tr bgcolor="#799AE1">
-    <td colspan=2 height=25><div align="center"></div></td>
-  <tr>
-    <td   height=150 colspan="2" bgcolor="#DDEEFF"><div align="center"></div></td>
-  </tr>
-</table>
-<br>
-
 </BODY>
 </HTML>

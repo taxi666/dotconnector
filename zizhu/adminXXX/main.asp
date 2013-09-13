@@ -3,7 +3,7 @@
 <html>
 <head>
 <TITLE><%=homepage_title%>--管理中心</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 
 <frameset cols="180,*" frameborder="NO" border="0" framespacing="0" rows="*"> 

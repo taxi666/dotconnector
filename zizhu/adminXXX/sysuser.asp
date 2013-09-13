@@ -66,7 +66,7 @@ operate=trim(Request("operate"))
 <HTML>
 <HEAD>
 <TITLE>系统用户管理</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" href="../css/style.css" type="text/css">
 </HEAD>
 

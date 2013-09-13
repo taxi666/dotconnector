@@ -1,8 +1,8 @@
 <%
- homepage_title= "江南大学资助中心"
- homepage_caption= "资助中心"
+ homepage_title= "Dot Connector"
+ homepage_caption= "Dot Connector"
  your_email= ""
- creattime= "20110510"
+ creattime= "20130910"
  news_back_count= "12"
  news_front_count= "15"
  news_permission= "no"
